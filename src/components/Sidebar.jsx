@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../context/AppContext.jsx';
 
 function Sidebar({ apps }) {
   const { abrirApp } = useContext(AppContext);

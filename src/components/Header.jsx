@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importá Link aquí
 
 function Header({ logo, menuItems }) {
   return (
@@ -10,7 +11,7 @@ function Header({ logo, menuItems }) {
         <ul className="header-menu">
           {menuItems.map((item) => (
             <li key={item.name}>
-              <a href={item.url}>{item.name}</a>
+              <Link to={item.url}>{item.name}</Link>
             </li>
           ))}
         </ul>

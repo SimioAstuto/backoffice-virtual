@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #eee;
+  background-color: #f0f0f0;
+  color: #333;
   height: 100vh;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  background-color: #001f3f;
+  background-color: #0077cc; /* Azul claro */
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ body {
 
 .sidebar {
   width: 200px;
-  background-color: #222244;
+  background-color: #e0e7ff; /* Azul muy claro */
   padding: 10px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -62,7 +62,7 @@ body {
 .sidebar-btn {
   background: none;
   border: none;
-  color: #eee;
+  color: #0077cc; /* Azul */
   width: 100%;
   padding: 10px;
   text-align: left;
@@ -74,15 +74,18 @@ body {
 }
 
 .sidebar-btn:hover {
-  background-color: #444466;
+  background-color: #cbd5f7; /* Azul pastel */
 }
 
 .main-content {
   flex: 1;
   position: relative;
-  background-color: #1e1e2e;
+  background-color: #ffffff; /* Blanco */
   overflow: auto;
   padding: 20px;
+  color: #222; /* Texto oscuro */
+  box-shadow: inset 0 0 10px #ddd;
+  border-radius: 8px;
 }
 
 .app-window {
@@ -90,24 +93,27 @@ body {
   top: 100px;
   left: 100px;
   width: 350px;
-  background: #252536;
+  background: #f0f4ff; /* Fondo ventana claro */
   border-radius: 6px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  color: white;
+  color: #222; /* Texto oscuro */
   user-select: none;
   display: flex;
   flex-direction: column;
+  border: 1px solid #cbd5f7;
 }
 
 .app-window-header {
-  background-color: #003366;
+  background-color: #005fa3; /* Azul más oscuro */
   padding: 8px 12px;
   cursor: move;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  color: white;
+  user-select: none;
 }
 
 .close-btn {
@@ -119,14 +125,16 @@ body {
 }
 
 .footer {
-  background-color: #001f3f;
+  background-color: #0077cc;
   padding: 10px 20px;
   text-align: center;
   color: white;
+  font-weight: 600;
 }
 
 .home {
   padding: 20px;
+  color: #222;
 }
 
 .calculator {
@@ -140,7 +148,8 @@ body {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 4px;
-  border: none;
+  border: 1px solid #0077cc;
+  color: #222;
 }
 
 .calculator-buttons button {
@@ -150,9 +159,14 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  background-color: #004080;
+  background-color: #0077cc;
   color: white;
   flex: 1 1 20%;
+  transition: background-color 0.2s;
+}
+
+.calculator-buttons button:hover {
+  background-color: #005fa3;
 }
 
 .calculator-buttons {
@@ -174,8 +188,8 @@ body {
   font-size: 16px;
   padding: 10px;
   border-radius: 6px;
-  border: none;
-  background-color: #33334d;
-  color: white;
+  border: 1px solid #0077cc;
+  background-color: #ffffff;
+  color: #222;
   font-family: monospace;
 }

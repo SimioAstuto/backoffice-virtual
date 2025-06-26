@@ -1,17 +1,18 @@
+import React from 'react';
 import { useContext } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Draggable from 'react-draggable';
 
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Calculator from './components/Calculator';
-import Notas from './components/Notas';
+import Header from './Header.jsx';
+import Sidebar from './Sidebar.jsx';
+import Footer from './Footer.jsx';
+import Home from './Home.jsx';
+import Calculator from './Calculator.jsx';
+import Notas from './Notas.jsx';
 
-import { AppContext } from './context/AppContext';
+import { AppContext } from '../context/AppContext.jsx';
 
-function App() {
+function AppContainer() {
   const { appsAbiertas, cerrarApp } = useContext(AppContext);
 
   return (
@@ -68,4 +69,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppContainer;

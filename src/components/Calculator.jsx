@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function Calculator() {
   const [input, setInput] = useState('');
@@ -8,13 +9,12 @@ function Calculator() {
   };
 
   const calcularResultado = () => {
-    try {
-      // eslint-disable-next-line no-eval
-      const resultado = eval(input);
-      setInput(String(resultado));
-    } catch {
-      setInput('Error');
-    }
+  try {
+    const resultado = evaluate(input);
+    setInput(String(resultado));
+  } catch {
+    setInput('Error');
+  }
   };
 
   const limpiarInput = () => setInput('');
