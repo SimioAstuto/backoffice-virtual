@@ -1,0 +1,22 @@
+.contact-form label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+  color: #333333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222222;
+}
+
+.contact-form button {
+  border-radius: 6px;
+  font-weight: 600;
+}

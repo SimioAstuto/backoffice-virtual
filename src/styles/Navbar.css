@@ -1,0 +1,22 @@
+.custom-navbar {
+  background-color: #f9fafb;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-navbar .navbar-brand {
+  color: #222222;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.custom-navbar .nav-link {
+  color: #555555;
+  font-weight: 600;
+  margin-right: 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #0d6efd;
+}
